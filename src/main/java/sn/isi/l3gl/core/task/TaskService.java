@@ -22,16 +22,16 @@ public class TaskService {
         return taskRepository.findAll();
     }
     
-    // Version 0.2.0-SNAPSHOT (sera implémenté plus tard)
-    // public Task updateStatus(Long id, TaskStatus status) {
-    //     Optional<Task> taskOptional = taskRepository.findById(id);
-    //     if (taskOptional.isPresent()) {
-    //         Task task = taskOptional.get();
-    //         task.setStatus(status);
-    //         return taskRepository.save(task);
-    //     }
-    //     return null;
-    // }
+    // Version 0.2.0-SNAPSHOT
+    public Task updateStatus(Long id, TaskStatus status) {
+        Optional<Task> taskOptional = taskRepository.findById(id);
+        if (taskOptional.isPresent()) {
+            Task task = taskOptional.get();
+            task.setStatus(status);
+            return taskRepository.save(task);
+        }
+        return null;
+    }
     
     // Version 0.3.0-SNAPSHOT (sera implémenté plus tard)
     // public long countCompletedTasks() {
