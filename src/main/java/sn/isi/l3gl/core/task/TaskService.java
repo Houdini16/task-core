@@ -17,10 +17,10 @@ public class TaskService {
         return taskRepository.save(task);
     }
     
-    // Version 0.1.0-SNAPSHOT (sera implémenté plus tard)
-    // public List<Task> listTasks() {
-    //     return taskRepository.findAll();
-    // }
+    // Version 0.1.0-SNAPSHOT
+    public List<Task> listTasks() {
+        return taskRepository.findAll();
+    }
     
     // Version 0.2.0-SNAPSHOT (sera implémenté plus tard)
     // public Task updateStatus(Long id, TaskStatus status) {
