@@ -34,7 +34,7 @@ public class TaskService {
     }
     
     // Version 0.3.0-SNAPSHOT (sera implémenté plus tard)
-    // public long countCompletedTasks() {
-    //     return taskRepository.countByStatus(TaskStatus.DONE);
-    // }
+    public long countCompletedTasks() {
+        return taskRepository.countByStatus(TaskStatus.DONE);
+    }
 }
